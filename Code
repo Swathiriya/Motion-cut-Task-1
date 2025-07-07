@@ -1,1 +1,18 @@
+import random
+
+adjectives = ["Senior", "Lead", "Global", "Certified", "Chief", "Dynamic", "Elite"]
+roles = ["Meme", "Unicorn", "Cloud", "Innovation", "Pixel", "Buzz", "Algorithm"]
+suffixes = ["Engineer", "Ninja", "Strategist", "Consultant", "Specialist", "Architect"]
+while True:
+    adj = random.choice(adjectives)
+    role = random.choice(roles)
+    suffix = random.choice(suffixes)
+
+    job_title = f"{adj} {role} {suffix}"
+    print("\nYour fake job title is:", job_title)
+
+    again = input("Want another? (yes/no): ").strip().lower()
+    if again != "yes":
+        print("Goodbye! Keep rocking your new title 😄")
+        break
 
